@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "vector": "cpp",
+        "coroutine": "cpp",
+        "string": "cpp"
+    }
+}
