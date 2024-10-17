@@ -1,0 +1,6 @@
+--IDEAS PARA EL PROYECTO--
+
+* Al final de cada página agregar una flecha para pasar
+al siguiente contenido.
+
+* Usar <code> al escribir codigo y usarlo como etiquetas nuevas
