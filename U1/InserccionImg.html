@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Insercción Imagenes HTML</title>
 </head>
-<body>
+<body style="background-color: #201f1f; color: white;">
+    <center>
+        <h1>Apuntes lenguaje de marcas</h1>
+        <h4><a href="/LMG_APUNTS/index.html">Volver al Indice</a></h4>
+    </center>
+
+    <hr id="top">
+    <center><h2>Insercción de Imágenes en HTML</h2></center>
+    <div class="parrafo">
+        <ul>
+            <li>
+                La etiqueta <code>&lt;img&gt;</code> se utiliza para insertar imagenes en una página web 
+            </li>
+            <br>
+            <li>
+                No tiene etiqueta de cierre ya que se <b>cierra automaticamente</b>.
+            </li>
+            <br>
+            <li>
+                Es esencial proporcionar información sobre la imagen
+                para que se muestre correctamente.
+            </li>
+        </ul>
+    </div>
     
+    <div class="atributos">
+        <h3>Atributos de Imagenes</h3>
+        <ol>
+            <li>
+                src (source)
+                <br>
+                Define la fuente o la ruta de la imagen. Puede ser la ruta relativa o URL completa.
+            </li>
+            <br>
+            <li>
+                alt (alternate text):
+                <br>
+                Proporciona <b>texto alternativo</b> que se muestra si la imagen no carga o es leida por lectores 
+            </li>
+            <br>
+            <li>
+                width y height:
+                <br>
+                Especifica lo amplio (<b>width</b>) y alto (<b>height</b>)<br>
+                Es importante controlar las medidads de la imagen. 
+            </li>
+        </ol>
+    </div>
+
+    <div class="ejemplo">
+        <h3>Ejemplo de uso</h3>
+        <code>&lt;img src="imatge.jpg" alt="Descripcion de Imagen" width="400" height="300"&gt;</code>
+        
+    </div>
+    <br>
+
+    <div class="buenaspracticas">
+        <table border="5" style="color: white;">
+
+            <tr>
+                IMPORTANTE
+                <td>
+                    Buenas Prácticas con Imagenes
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            Siempre utiliza el atributo alt para garantizar una buena accesibilidad y SEO.
+                        </li>
+                        <li>
+                            Evita insertar imágenes muy grandes sin reducir su tamaño,<br> ya que eso puede afectar el rendimiento de la página.
+                        </li>
+                        <li>
+                            No dejar comentarios innecesarios en producción: Los comentarios en entornos de desarrollo pueden ser útiles<br>
+                            pero en código de producción es mejor dejar solo los esenciales.
+
+                        </li>
+                    </ul>
+                   
+                </td>
+            </tr>
+            
+        </table>
+
+
+    <br>
+    <hr>
+    <br>
+    <center>
+        <a href="./EnlacesHTML.html">Siguiente tema</a> - <a href="#top">Volver arriba</a>
+    </center>
+    <br>
 </body>
 </html>
