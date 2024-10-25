@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enlaces HTML</title>
+</head>
+<body  style="background-color: #201f1f; color: white;">
+    <center>
+        <h1>Apuntes lenguaje de marcas</h1>
+        <h4><a href="/LMG_APUNTS/index.html">Volver al Indice</a></h4>
+    </center>
+
+    <hr id="top">
+    <center><h2>Listas HTML</h2></center>
+    <h3>Tipo de Listas</h3>
+    <div class="TipoListas">
+        <ul>
+            <li>Listas no ordenadas <code>&lt;ul&gt;</code></li>
+            <ol>
+                <li> 
+                    Se utilizan para listas de elementos sin un orden específico.
+                </li>
+                <li>
+                    Els elements es mostren amb vinyetes o altres
+                    símbols abans de cada ítem.
+                </li>
+                <li>
+                    Cada elemento de la lista se define con la etiqueta <code>&lt;li&gt;</code> (list item).
+                </li>
+            </ol>
+            <li>Listas Ordenadas <code>&lt;ol&gt;</code></li>
+            <ol>
+                <li>
+                    Se utilizan para listas en las que el orden de los elementos es relevante.
+                </li>
+                <li>
+                    Los elementos se numeran automáticamente (1, 2, 3, etc.).
+                </li>
+                <li>
+                    Cada elemento de la lista también se define con <code>&lt;li&gt;</code>.
+                </li>
+            </ol>
+        </ul>
+    </div>
+    <div class="atributos">
+        <h3>Atributos de listas</h3>
+        <ul>
+            <li>Atribut type (para listas ordenadas)</li>
+            <ol>
+                <li>
+                    Se puede utilizar para definir el tipo de numeración en la lista
+                    <br>
+                    1: Nombres
+                    <br>
+                    A: Mayusculas
+                    <br>
+                    a: Minusculas
+                    <br>
+                    I: Numeros romanos en Mayusculas
+                    <br>
+                    i: Numeros romandos en Minusculas
+                </li>
+            </ol>
+            <li>Atribut start (para listas ordenadas <code>&lt;ol&gt;</code>) </li>
+            Define el numero o letra para comenzar la numeración
+        </ul>
+    </div>
+    <div class="ejemplo">
+        <h3>Ejemplo de Listas</h3>
+        <pre>
+        &lt;ol type="A"&gt;
+            &lt;li&gt;Primer ítem&lt;/li&gt;
+            &lt;li&gt;Segon ítem&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;ol start="5"&gt;
+            &lt;li&gt;Ítem número 5&lt;/li&gt;
+            &lt;li&gt;Ítem número 6&lt;/li&gt;
+        &lt;/ol&gt;
+
+        </pre>
+    </div>
+    <div class="buenaspracticas">
+        <table border="5" style="color: white;">
+
+            <tr>
+                IMPORTANTE
+                <td>
+                    Buenas Prácticas con Listas
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            Utiliza listas no ordenadas (<code>&lt;ul&gt;</code>) cuando el orden de los ítems no sea importante.
+                        </li>
+                        <br>
+                        <li>
+                            Utiliza listas ordenadas <code>(&lt;ol&gt;)</code> cuando el orden sea relevante.
+                        </li>
+                        <br>
+                        <li>
+                            Personaliza las listas según las necesidades visuales o estilísticas <br>utilizando los atributos adecuados.
+                        </li>
+                    </ul>
+                   
+                </td>
+            </tr>
+            
+        </table>
+
+    </div>
+
+
+    <br>
+    <hr>
+    <br>
+    <center>
+        <a href="./ListasHTML.html">Siguiente tema</a> - <a href="#top">Volver arriba</a>
+    </center>
+    <br>
+</body>
+</html>
