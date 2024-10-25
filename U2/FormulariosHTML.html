@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios HTML</title>
+</head>
+<body style="background-color: #201f1f; color: white;">
+    <center>
+        <h1>Apuntes lenguaje de marcas</h1>
+        <h4><a href="/LMG_APUNTS/index.html">Volver al Indice</a></h4>
+    </center>
+
+    <hr id="top">
+    <center><h2>Formularios con HTML</h2></center>
+
+    <div class="parrafo">
+        <p>
+            Los formularios son una de las herramientas más importantes de HTML porque permiten a los usuarios enviar datos a un servidor.<br>
+            Con HTML5, los formularios han ganado nuevas funcionalidades que mejoran su usabilidad y validación.
+            <br>
+            <br>
+            Un formulario se crea con la etiqueta &lt;form&gt;, que actúa como el contenedor de todos los elementos de entrada (texto, botones, selecciones, etc.).
+        </p>
+    </div>
+    <div class="ejemplo">
+
+        <h3>Ejemplo </h3>
+        <pre>
+        &lt;form action="submit.php" method="POST"&gt;
+        &lt;!-- Aquí van los campos del formulario --&gt;
+        &lt;/form&gt;
+
+        </pre>
+    </div>
+
+    <div class="etiquetas">
+        <h3>Etiquetas</h3>
+        <ul>
+            <li>
+                <b><code>&lt;input&gt;</code></b>
+                Es el elemento mas versatil para crear campos de entrada. El tipo de entrada se define usando <code>type</code>
+            </li>
+            <li>
+                <b><code>&lt;label&gt;</code></b>
+                Se utiliza para etiquetar campos de formularios
+            </li>
+            <li>
+                <b><code>&lt;textarea&gt;</code></b>
+                Para textos largos se utiliza &lt;textarea&gt; que permite area de texto mas grande
+            </li>
+            <li>
+                <b><code>&lt;select&gt;</code></b>
+                Se utiliza para crear listas desplegables de selección. Cada opcion se define con <code>&lt;option&gt;</code>
+                <br>
+                Con posibilidad de añadir un atributo <b>multiples</b> opciones en una lista.
+            </li>
+            <li>
+                <b><code>&lt;button&gt;</code></b>
+                Se utiliza para crear botones de enviamiento o otras acciones.
+            </li>
+            <li>
+                <b>radio buttons</b>
+                Permiten seleccionar una opcion de un conjunto de posibilidades
+            </li>
+            <li>
+                <b>checkboxes</b>
+                Permiten seleccionar diversas opciones independientemente
+            </li>
+        </ul>
+    </div>
+    <div class="ejemplo">
+        <h3>Ejemplos de uso (por orden de explicacion)</h3>
+        <code>
+            &lt;input type="text" name="nom" placeholder="Escriu el teu nom"&gt;<br>
+            &lt;label for="nom"&gt;Nom:&lt;/label&gt;<br>
+            &lt;input type="text" id="nom" name="nom"&gt;<br>
+            &lt;textarea name="comentari" rows="4" cols="50" placeholder="Escriu el teu comentari aquí"&gt;&lt;/textarea&gt;<br><br>
+            &lt;select id="ciutat" name="ciutat"&gt;<br>
+            &lt;option value="barcelona"&gt;Barcelona&lt;/option&gt;<br>
+            &lt;option value="madrid"&gt;Madrid&lt;/option&gt;<br>
+            &lt;option value="valencia"&gt;València&lt;/option&gt;<br>
+            &lt;/select&gt;<br><br>
+            &lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>
+            &lt;label&gt;&lt;input type="radio" name="sexe" value="home"&gt; Home&lt;/label&gt;<br>
+            &lt;label&gt;&lt;input type="checkbox" name="subscripcio" value="noticies"&gt; Subscriu-me a les notícies&lt;/label&gt;
+
+
+        </code>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    <center>
+        <a href="./FormulariosHTML.html">Siguiente tema</a> - <a href="#top">Volver arriba</a>
+    </center>
+    <br>
+
+</body>
+</html>
