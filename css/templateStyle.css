@@ -6,8 +6,18 @@
     src: url("/fonts/Roboto-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'LemonMilk';
+    src: url("/fonts/LEMONMILK-Bold.otf");
+}
+
 body {
     font-family: 'Roboto';
     color: white;
-    background-color: black;
+    background-color: #0c192c;
+}
+
+header {
+    font-family: 'LemonMilk';
+    
 }
