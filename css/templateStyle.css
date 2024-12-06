@@ -1,9 +1,9 @@
 
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Sora-Medium';
     color: whitesmoke;
-    src: url("/fonts/Roboto-Regular.ttf");
+    src: url("/fonts/Sora-Medium.ttf");
 }
 
 @font-face {
@@ -12,12 +12,11 @@
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Sora-Medium';
     color: white;
     background-color: #0c192c;
 }
 
-header {
+header, h1, h2, h3, h4 {
     font-family: 'LemonMilk';
-    
 }
