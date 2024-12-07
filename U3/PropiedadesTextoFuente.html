@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de Texto</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/templateStyle.css">
+</head>
+<body>
+
+    <div class="container">
+      
+      <aside class="sidebar">
+        <h2>Unidad 3</h2>
+        <ul>
+          <li><a href="./IntroduccionCSS.html">Introducción</a></li>
+          <li><a href="./AplicacionEstilosCSS.html">Aplicacion Estilos</a></li>
+          <li><a href="./SintaxisBasicaCSS.html">Sintaxis Basica</a></li>
+          <li><a href="./PropiedadesTextoFuente.html">Propiedades Texto y Fuente</a></li>
+          <li><a href="./MargenesBordes.html">Margenes y Bordes</a></li>
+          <li><a href="./ColoresFuente.html">Color y fuentes</a></li>
+          <li><a href="./DimensionesCajas.html">Dimensiones y cajas</a></li>
+          <li><a href="./PosicionamientoBasico.html">Posicionamiento Basico</a></li>
+          <li><a href="./DisenoFlexbox.html">Diseño Basico Flexbox</a></li>
+          <li><a href="./MediaQueriesIntro.html">Media Queries Intro</a></li>
+        </ul>
+      </aside>
+  
+      
+      <main class="content">
+        <section>
+          <h2>Propiedades Texto y Fuente</h2>
+          <p>
+            El CSS permite controlar como se muestran los textos dentro de una página web. Con varias propiedades, podemos cambiar la
+            fuente, el color, la alineación, la medida del texto, y otros aspectos visuales para mejorar la legibilidad y la estética del
+            contenido.  
+          </p>
+
+          <ol>
+            <li>
+                <b>Propiedad font-family:</b>
+                <p>
+                    La propietat font-family defineix el tipus de lletra (tipografia) que s'utilitzarà per
+                    a un element de text. Pots especificar una o més fonts, i el navegador aplicarà la
+                    primera que estigui disponible al sistema de l'usuari.
+                </p>
+                <pre>
+                    p {
+                        font-family: "Arial", sans-serif;
+                    }
+                </pre>
+            </li>
+
+            <li>
+                <b>Propiedad font-size:</b>
+                <p>
+                    La propietat font-size controla la mida de la lletra. Els valors es poden definir en
+                    diverses unitats, com píxels (px), ems (em), punts (pt), o percentatges (%).
+                </p>
+                <pre> 
+                    h1 {
+                        font-size: 32px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                </pre>
+            </li>
+
+            <li>
+                <b>Propiedad color</b>
+                <p>
+                    La propiedad color define el color del texto. Se pueden utilizar nombres de colores
+                    predefinidos, valores en hexadecimal, o el sistema de colores RGB o RGBA.
+                </p>
+                <pre>
+                    p {
+                        color: red; 
+                    }
+                    h1 {
+                        color: #00FF00; 
+                    }
+                    span {
+                        color: rgb(0, 0, 255); 
+                    }
+                </pre>
+            </li>
+
+            <li>
+                <b>Propiedad text-align</b>
+                <p>
+                   
+                    La propiedad texto-align se utiliza para controlar la alineación del texto dentro de un
+                    elemento. Los valores más comunes son left (izquierda), right (derecha), center
+                    (centrado) y justify (justificado).
+                </p>
+                <pre>
+                    h1 {
+                        text-align: center;
+                    }
+                    p {
+                        text-align: justify;
+                    }
+                </pre>
+            </li>
+
+            <li>
+                <b>Propiedad font-weight</b>
+                <p>  
+                    La propiedad fuente-weight controla el grosor de la letra. Los valores comunes son:
+                    <ul>
+                        <li>
+                            normal: por defecto.
+                        </li>
+                        <li>
+                            bold: texto en negrita.
+                        </li>
+                        <li>
+                            Números entre 100 y 900, donde 400 es el valor por defecto y 700 representa
+                            negrita.    
+                        </li>
+                    </ul>
+                </p>
+                <pre>
+                    p {
+                        font-weight: bold;
+                    }
+                </pre>
+            </li>
+
+            
+            <li>
+                <b>Propiedad font-style</b>
+                <p>            
+                    La propiedad fuente-style controla el estilo de la fuente, como si el texto será normal o en
+                    cursiva.
+                    <br>
+                    Els valors més comuns són:
+                    <ul>
+                        <li>
+                            normal: por defecto.
+                        </li>
+                        <li>
+                            italic: texto en cursiva.
+                        </li>
+                        <li>
+                            oblique: texto inclinado. 
+                        </li>
+                    </ul>
+                </p>
+                <pre>
+                    span {
+                        font-style: italic;
+                    }
+                </pre>
+            </li>
+
+          </ol>
+        </section>
+        
+    
+      </main>
+    </div>
+  </body>
+</html>
