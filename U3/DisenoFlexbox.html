@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Flexbox</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/templateStyle.css">
+</head>
+<body>
+
+    <div class="container">
+      
+      <aside class="sidebar">
+        <h2>Unidad 3</h2>
+        <ul>
+          <li><a href="./IntroduccionCSS.html">Introducción</a></li>
+          <li><a href="./AplicacionEstilosCSS.html">Aplicacion Estilos</a></li>
+          <li><a href="./SintaxisBasicaCSS.html">Sintaxis Basica</a></li>
+          <li><a href="./PropiedadesTextoFuente.html">Propiedades Texto y Fuente</a></li>
+          <li><a href="./MargenesBordes.html">Margenes y Bordes</a></li>
+          <li><a href="./ColoresFuente.html">Color y fuentes</a></li>
+          <li><a href="./DimensionesCajas.html">Dimensiones y cajas</a></li>
+          <li><a href="./PosicionamientoBasico.html">Posicionamiento Basico</a></li>
+          <li><a href="./DisenoFlexbox.html">Diseño Basico Flexbox</a></li>
+          <li><a href="./MediaQueriesIntro.html">Media Queries Intro</a></li>
+        </ul>
+      </aside>
+  
+      
+      <main class="content">
+        <section>
+          <h2>Introducción</h2>
+          <p>       
+            Flexbox es un sistema de diseño en CSS que proporciona una manera muy eficiente de distribuir el espacio entre los
+            elementos y alinearlos dentro de un contenedor, incluso cuando la medida de los elementos es desconocida o dinámica. Flexbox
+            es ideal para crear diseños de páginas adaptativas, puesto que facilita la alineación, distribución y ordenación de los elementos
+            dentro de un contenedor.
+          </p>
+          
+        </section>
+
+        <section>
+            <h2>Diseño Basico Flexbox </h2>
+
+            <ol>
+              <li>
+                Contenedor flex 
+                <p>
+                    El punto de partida para utilizar Flexbox es establecer display: flex en
+                    el elemento contenedor. Este contenedor se conoce como contenedor
+                    flex, y sus elementos hijos se conocen como elementos flex. Una vez
+                    activada el display: flex, puedes utilizar varias propiedades para ajustar como
+                    se distribuyen los elementos dentro del contenedor.
+                </p> 
+                
+                <pre>
+                    .contingut {
+                        display: flex;
+                    }
+                </pre>
+              </li>
+
+              <li>
+                Direccion del flexbox
+                <p>    
+                    Por defecto, los elementos flex se disponen en fila horizontalmente. Puedes
+                    cambiar la dirección con la propiedad flex-*direction.
+                </p>
+                <ol>
+                    <li><strong>fila (row):</strong> Los elementos se colocan en fila (horizontal) (valor por defecto).</li>
+                    <li><strong>fila inversa (row-reverse):</strong> Los elementos se colocan en fila pero en orden inverso.</li>
+                    <li><strong>columna (column):</strong> Los elementos se colocan en columna (vertical).</li>
+                    <li><strong>columna inversa (column-reverse):</strong> Los elementos se colocan en columna pero en orden inverso.</li>
+                </ol>
+                  
+                <pre>
+                    .contenidor {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                </pre>
+              </li>
+
+              <li>
+                Alineamiento horizontal
+                <p>
+                    La propiedad justify-contento controla la alineación de los elementos a lo largo del
+                    eje principal (horizontal por defecto). Puedes distribuir los elementos flex de
+                    diferentes maneras dentro del contenedor.
+                </p>
+
+
+                <pre>
+                    .contenidor {
+                        display: flex;
+                        justify-content: center;
+                    }
+                </pre>
+              </li>
+
+              <li>
+                Alineamiento vertical
+                <p>                  
+                La propiedad align-*items controla la alineación de los elementos a lo largo del eje
+                transversal (vertical si la dirección es horizontal). Esta propiedad
+                determina como se alinean los elementos flex dentro del contenedor en relación
+                con su altura.
+                </p>
+
+
+                <pre>
+                    .contenidor {
+                        display: flex;
+                        align-items: center;
+                    }
+                </pre>
+              </li>
+
+              <li>
+                Control del espacio que ocupa cada elemento
+                <p>      
+                    La propiedad flex-*grow especifica como los elementos flex crecen dentro del contenedor para ocupar el espacio disponible. Cada elemento se puede asignar
+                    un valor numérico que indica cuánto tiene que crecer en relación con los otros elementos. Si todos los elementos tienen flex-*grow: 1, el espacio disponible
+                    se distribuirá de manera uniforme.
+                </p>
+
+
+                <pre>
+                    .element {
+                        flex-grow: 2; 
+                    }
+                </pre>
+              </li>
+
+            </ol>
+        </section>
+        
+      </main>
+    </div>
+  </body>
+</html>
