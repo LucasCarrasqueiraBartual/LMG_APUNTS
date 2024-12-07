@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/templateStyle.css">
+</head>
+<body>
+
+    <div class="container">
+      
+      <aside class="sidebar">
+        <h2>Unidad 3</h2>
+        <ul>
+          <li><a href="./IntroduccionCSS.html">Introducción</a></li>
+          <li><a href="./AplicacionEstilosCSS.html">Aplicacion Estilos</a></li>
+          <li><a href="./SintaxisBasicaCSS.html">Sintaxis Basica</a></li>
+          <li><a href="./PropiedadesTextoFuente.html">Propiedades Texto y Fuente</a></li>
+          <li><a href="./MargenesBordes.html">Margenes y Bordes</a></li>
+          <li><a href="./ColoresFuente.html">Color y fuentes</a></li>
+          <li><a href="./DimensionesCajas.html">Dimensiones y cajas</a></li>
+          <li><a href="./PosicionamientoBasico.html">Posicionamiento Basico</a></li>
+          <li><a href="./DisenoFlexbox.html">Diseño Basico Flexbox</a></li>
+          <li><a href="./MediaQueriesIntro.html">Media Queries Intro</a></li>
+        </ul>
+      </aside>
+  
+      
+      <main class="content">
+        <section>
+          <h2>Introducción</h2>
+          <p>          
+            Las Media Queries son una característica poderosa del CSS que permite adaptar el diseño de una página web en
+            función de las características del dispositivo que lo está visualizando, como la medida de la pantalla, la resolución o
+            la orientación. Esta técnica es clave para implementar diseños responsius que ofrecen una experiencia óptima tanto
+            en dispositivos móviles como en tabletas u ordenadores de sobremesa.
+          </p>
+
+          <pre>
+            @media (condició) {
+                /* Estils que només s'aplicaran si es compleix la condició */
+            }
+          </pre>
+          
+        </section>
+
+        <section>
+            <h2>Media Queries Introduccion </h2>
+
+            <ol>
+              <li>
+                Aplicacion basica de media queries para pantallas de distinta medida 
+                <p>        
+                    Un uso típico de las media queries es adaptar el diseño a diferentes
+                    anchuras de pantalla. Por ejemplo, puedes ajustar los estilos para
+                    pantallas grandes y pequeñas.
+                </p> 
+                
+                <pre>
+                    @media (min-width: 768px) {
+                        body {
+                            background-color: lightblue;
+                        }
+                    }
+                        
+                    @media (max-width: 767px) {
+                        body {
+                            background-color: lightgreen;
+                        }
+                    }
+                </pre>
+              </li>
+
+              <li>
+                Tipo de condiciones mas comunes
+                <p>    
+                    A continuación, veremos algunas de las condiciones más comunes que puedes utilizar dentro de las media queries:
+                </p>
+                <ol>
+                    <li><strong>Anchura de la pantalla (min-width y max-width):</strong> Estas condiciones se utilizan para aplicar estilos cuando la ventana del navegador tiene una anchura mínima (min-width) o máxima (max-width).</li>
+                    <li><strong>Altura de la pantalla (min-height y max-height):</strong> Estas condiciones funcionan de manera similar a las de anchura, pero se basan en la altura de la ventana.</li>
+                    <li><strong>Orientación de la pantalla (orientation):</strong> Puedes utilizar la condición orientation para aplicar estilos diferentes si la pantalla está en orientación horizontal (landscape) o vertical (portrait).</li>
+                </ol>
+                  
+                  
+                <pre>
+                    @media (orientation: landscape) {
+                        /* Estils per a dispositius en orientació horitzontal */
+                    }
+                    @media (orientation: portrait) {
+
+                    }
+                </pre>
+              </li>
+
+              <li>
+                Uso de Multiples condiciones de query
+                <p>
+                    Puedes combinar varias condiciones en una sola media query mediante las palabras clave and o only para especificar
+                    estilos muy concretos.
+                </p>
+
+
+                <pre>
+                    @media (min-width: 600px) and (max-width: 1200px) {
+                    
+                    }
+                </pre>
+              </li>
+
+
+            </ol>
+        </section>
+        
+      </main>
+    </div>
+  </body>
+</html>
