@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion CSS</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/templateStyle.css">
+</head>
+<body>
+
+    <div class="container">
+      
+      <aside class="sidebar">
+        <h2>Unidad 3</h2>
+        <ul>
+          <li><a href="./IntroduccionCSS.html">Introducción</a></li>
+          <li><a href="./AplicacionEstilosCSS.html">Aplicacion Estilos</a></li>
+          <li><a href="./SintaxisBasicaCSS.html">Sintaxis Basica</a></li>
+          <li><a href="./PropiedadesTextoFuente.html">Propiedades Texto y Fuente</a></li>
+          <li><a href="./MargenesBordes.html">Margenes y Bordes</a></li>
+          <li><a href="./ColoresFuente.html">Color y fuentes</a></li>
+          <li><a href="./DimensionesCajas.html">Dimensiones y cajas</a></li>
+          <li><a href="./PosicionamientoBasico.html">Posicionamiento Basico</a></li>
+          <li><a href="./DisenoFlexbox.html">Diseño Basico Flexbox</a></li>
+          <li><a href="./MediaQueriesIntro.html">Media Queries Intro</a></li>
+        </ul>
+      </aside>
+  
+      
+      <main class="content">
+        <section>
+          <h2>Sintaxis Basica de CSS</h2>
+          <ol>
+            <li>
+                <b>Regla de CSS</b>: 
+                Es una instrucción que define como
+                se tiene que aplicar un estilo a uno o más elementos HTML
+                dentro de una página web.
+            </li>
+            <br>
+            <li>  
+                <b>Selector</b>:
+                Indica el elemento HTML al cual se aplicarán los estilos.
+            </li>
+            <br>
+            <li> 
+                <b>Propiedad</b>: Defineix la característica que vols
+                modificar (com ara el color, la mida del text, el
+                marge, etc.).
+            </li>
+            <br>
+            <li>
+                <b>Valor</b>: 
+                Asigna un valor específico a la propiedad
+                (como por ejemplo "moratón" para el color, "16px" para la medida
+                del texto, etc.).
+            </li>
+            <br>
+            <li>
+              <b>Declaracion CSS</b>: 
+              Es una instrucción dentro de una regla
+              CSS que define una característica específica de estilo
+              para un elemento HTML.
+            </li>
+          </ol>
+          
+        </section>
+        <section>
+            <h2>Selectores en CSS</h2>
+            <p>
+                Los selectores son una parte fundamental del CSS porque definen qué elementos HTML serán afectados por las reglas
+                de estilo. Hay varios tipos de selectores, pero los más comunes en el aprendizaje básico son:
+            </p>
+            <ol>
+              <li>
+                  <b>Selector de tipo (Type Selector)</b>:
+                  <p>    
+                    Este selector aplica estilos a todos los elementos HTML del mismo
+                    tipo. Este código aplicará el color verde en todos los títulos (&lt;h1&gt;) de la
+                    página.
+                  </p>
+                  <pre>
+                    h1 {
+                        color: green;
+                    }
+                  </pre>
+              </li>
+              <br>
+              <li>  
+                  <b>Selector de clase (Class Selector)</b>:
+                  <p>     
+                    Los selectores de clase permiten aplicar estilos a elementos HTML con
+                    una clase específica. Se utiliza un punto (.) para seleccionar una
+                    clase. Cualquier elemento HTML que tenga el atributo class="mí-
+                    clase" tendrá un fondo amarillo. Por ejemplo:
+                  </p>
+                  <pre>
+                    .mi-classe {
+                        background-color: yellow;
+                    }
+                  </pre>
+              </li>
+              <br>
+              <li> 
+                  <b>Selector de id (ID Selector)</b>:
+                  <p>
+                    El selector de id se utiliza para aplicar estilos a un único elemento HTML
+                    que tenga un identificador específico. Se usa el símbolo de la
+                    coixinera #. Este ejemplo centrará el texto del elemento que tenga
+                    id="mí-*id". Es importante recordar que un ID tiene que ser único en la
+                    página.
+                  </p>
+
+                  <pre>
+                    #mi-id {
+                        text-align: center;
+                    }
+                  </pre>
+              </li>
+              <br>
+              <li>
+                  <b>Selector universal</b>: 
+                  <p>
+                    El selector universal (*) aplica estilos a todos los elementos de una
+                    página. Este ejemplo elimina los márgenes y rellenados de todos los
+                    elementos de la página, cosa útil para establecer un estilo uniforme.
+                  </p>
+
+                  <pre>
+                    * {
+                        margin: 0;
+                        padding: 0;
+                    }
+                  </pre>
+                    
+              </li>
+              
+            </ol>
+            
+        </section>
+
+        <section>
+            <h2>Conceptos Importantes</h2>
+
+            <ul>
+                <li>
+                    Herencia:
+                    
+                    Los hijos heredan los estilos
+                    de sus padres, así no hace falta
+                    que escribas estilos para
+                    todo.
+                </li>
+                <pre>
+                    body {
+                        color: blue;
+                    }
+                    h1{
+                        color:blue;
+                    }
+                </pre>
+
+                <li>
+                    Especificado: Cuando hay conflictos de estilos, el
+                    navegador aplica solo el de más
+                    especificidad.
+                </li>
+                <pre>
+                    .parrafo {
+                        color: blue;
+                    }
+                    .article .parrafo{
+                        color:red;
+                    }
+                </pre>
+                <li>
+                    Cascada:
+                    Todo estilo sobrescribe uno de anterior.
+                    La C de CSS significa Cascada.
+                </li>
+                <pre>
+                    .parrafo {
+                        color: blue;
+                    }
+                    .parrafo{
+                        color:red;
+                    }
+                </pre>
+            </ul>
+        </section>
+        
+
+    
+    
+      </main>
+    </div>
+  </body>
+</html>
