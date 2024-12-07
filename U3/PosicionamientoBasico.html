@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento Basico</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/templateStyle.css">
+</head>
+<body>
+
+    <div class="container">
+      
+      <aside class="sidebar">
+        <h2>Unidad 3</h2>
+        <ul>
+          <li><a href="./IntroduccionCSS.html">Introducción</a></li>
+          <li><a href="./AplicacionEstilosCSS.html">Aplicacion Estilos</a></li>
+          <li><a href="./SintaxisBasicaCSS.html">Sintaxis Basica</a></li>
+          <li><a href="./PropiedadesTextoFuente.html">Propiedades Texto y Fuente</a></li>
+          <li><a href="./MargenesBordes.html">Margenes y Bordes</a></li>
+          <li><a href="./ColoresFuente.html">Color y fuentes</a></li>
+          <li><a href="./DimensionesCajas.html">Dimensiones y cajas</a></li>
+          <li><a href="./PosicionamientoBasico.html">Posicionamiento Basico</a></li>
+          <li><a href="./DisenoFlexbox.html">Diseño Basico Flexbox</a></li>
+          <li><a href="./MediaQueriesIntro.html">Media Queries Intro</a></li>
+        </ul>
+      </aside>
+  
+      
+      <main class="content">
+        <section>
+          <h2>Introducción</h2>
+          <p>       
+            Lo CSS ofrece varias técnicas para controlar la ubicación de los elementos en una página web. La propiedad clave para el posicionamiento es
+            position, que tiene varios valores para definir como se posiciona un elemento respecto a su elemento contenedor o al documento.
+          </p>
+          
+        </section>
+
+        <section>
+            <h2>Posicionamiento Basico</h2>
+
+            <ol>
+              <li>
+                Propiedad de position 
+                <ol>
+                    <li><strong>static (por defecto):</strong> Los elementos se posicionan de manera normal, siguiendo el flujo del documento. No se pueden ajustar manualmente con coordenadas.</li>
+                    <li><strong>relative:</strong> El elemento se posiciona respecto a su posición original en el flujo del documento. Se pueden utilizar coordenadas para moverlo ligeramente (arriba, abajo, izquierda o derecha).</li>
+                    <li><strong>absolute:</strong> El elemento se saca del flujo del documento y se posiciona respecto a su elemento contenedor más cercano que tenga una posición definida. Si no hay ningún contenedor definido, se posiciona respecto a la página.</li>
+                    <li><strong>fixed:</strong> El elemento se saca del flujo del documento y se posiciona respecto a la ventana del navegador. Se mantiene fijo incluso cuando el usuario se desplaza.</li>
+                    <li><strong>sticky:</strong> El elemento se comporta como relative hasta que llega a un punto en el desplazamiento de la página, después del cual se comporta como fixed.</li>
+                </ol>
+                  
+              </li>
+
+              <li>
+                Propiedades de posicionamiento
+                <p> 
+                Cuando se define la propiedad position como relative, absolute, fixed o sticky, puedes utilizar las propiedades top, right, bottom, y left para
+                especificar la distancia del elemento respecto a sus límites.
+                </p>
+                <pre>
+                    div {
+                        position: relative;
+                        top: 20px; /* Mou l'element 20 píxels cap avall des de la seva posició original */
+                        left: 30px; /* Mou l'element 30 píxels cap a la dreta */
+                    }
+                </pre>
+              </li>
+
+              <li>
+                Posicionamiento absoluto
+                <p>
+                    Con position: absolute, el elemento se saca completamente del flujo
+                    normal del documento y se posiciona respecto a su elemento
+                    contenedor más próximo con position: relative, absolute, o fixed.
+                </p>
+
+
+                <pre>
+                    div {
+                        position: absolute;
+                        top: 50px;
+                        left: 100px;
+                    }
+                </pre>
+              </li>
+
+              <li>
+                Posicionamiento fix
+                <p>   
+                    Los elementos con position: fixed se mantienen en una ubicación fija
+                    a la pantalla incluso cuando el usuario hace desplazamientos. Se
+                    posicionan respecto a la ventana del navegador.
+                </p>
+
+
+                <pre>
+                    div {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100px;
+                        height: 100px;
+                        background-color: red;
+                    }
+                </pre>
+              </li>
+
+              <li>
+                Posicionamiento sticky
+                <p>      
+                    Los elementos con position: sticky se comportan como relative hasta que
+                    el usuario se desplaza por la página y llega a un punto
+                    especificado, después del cual el elemento se comporta como fixed.
+                </p>
+
+
+                <pre>
+                    h1 {
+                        position: sticky;
+                        top: 10px;
+                    }
+                </pre>
+              </li>
+
+              <li>
+                Propiedad z-index
+                <p>         
+                    La propiedad z-index se usa para controlar la orden de
+                    superposición de los elementos posicionados (relative, absolute, fixed o
+                    sticky). Los valores más altos de z-index colocan el elemento ante
+                    otros elementos con valores inferiores.
+                </p>
+
+
+                <pre>
+                    div {
+                        position: absolute;
+                        z-index: 10;
+                    }
+                </pre>
+              </li>
+
+            </ol>
+        </section>
+        
+      </main>
+    </div>
+  </body>
+</html>
