@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion Estilos</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/templateStyle.css">
+</head>
+<body>
+
+    <div class="container">
+      
+      <aside class="sidebar">
+        <h2>Unidad 3</h2>
+        <ul>
+          <li><a href="./IntroduccionCSS.html">Introducción</a></li>
+          <li><a href="./AplicacionEstilosCSS.html">Aplicacion Estilos</a></li>
+          <li><a href="./SintaxisBasicaCSS.html">Sintaxis Basica</a></li>
+          <li><a href="./PropiedadesTextoFuente.html">Propiedades Texto y Fuente</a></li>
+          <li><a href="./MargenesBordes.html">Margenes y Bordes</a></li>
+          <li><a href="./ColoresFuente.html">Color y fuentes</a></li>
+          <li><a href="./DimensionesCajas.html">Dimensiones y cajas</a></li>
+          <li><a href="./PosicionamientoBasico.html">Posicionamiento Basico</a></li>
+          <li><a href="./DisenoFlexbox.html">Diseño Basico Flexbox</a></li>
+          <li><a href="./MediaQueriesIntro.html">Media Queries Intro</a></li>
+        </ul>
+      </aside>
+  
+      
+      <main class="content">
+        <section>
+          <h2>Aplicacion de Estilos</h2>
+          <p>
+            El CSS se puede aplicar a un documento HTML de tres maneras principales: en línea, incrustado (dentro del HTML) y externo
+            (mediante un fichero CSS separado). Cada una de estas formas tiene sus propósitos y usos..
+          </p>
+        </section>
+        <section>
+          <h2>Diferentes Estilos</h2>
+          <ol>
+            <li>
+              <b>Estilos en línea (Inline styles)</b>
+            </li>
+            <p>Los estilos en línea se aplican directamente a un elemento HTML, utilizando el atributo style dentro de la misma etiqueta del
+              elemento. Este método es adecuado para aplicar estilos a un solo elemento de manera rápida, pero no es recomendable
+              para páginas grandes, puesto que dificulta la mantenibilitat.</p>
+            <code>
+              &lt;p style="color: red; font-size: 20px;"&gt;Esto es un parrafo.&lt;/p&gt;
+            </code>
+            Resultado:
+            <p style="color: red; font-size: 20px;">Esto es un parrafo.</p>
+
+            <li>
+              <b>Estilos incrustados (Embedded styles)</b>
+            </li>
+            <p>
+                Los estilos incrustados se colocan dentro de la sección &lt;head&gt; de un documento HTML, dentro de una etiqueta &lt;style&gt;.
+            </p>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ca"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Estils incrustats&lt;/title&gt;
+    &lt;style&gt;
+      p {
+        color: blue;
+        font-size: 18px;
+      }
+      h1 {
+        text-align: center;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Aquest és un títol centrat&lt;/h1&gt;
+    &lt;p&gt;Aquest paràgraf tindrà text de color blau i mida 18 píxels.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+            
+          <li>
+            <b>Estilos externos (External stylesheets)</b>
+          </li>
+          <p>
+            Los estilos externos se almacenan en un fichero CSS separado, y se enlazan al documento HTML utilizando la etiqueta &lt;link&gt;
+            dentro de la sección &lt;head&gt;. Este es el método más recomendado para la mayoría de lugares webs, especialmente si constan
+            de múltiples páginas.
+          </p>
+          
+          </ol>
+          <p>
+            El Archivo HTML:
+          </p>
+          <pre>
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang="ca"&gt;
+            &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;title&gt;Estils externs&lt;/title&gt;
+              &lt;link rel="stylesheet" href="style.css"&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;Benvinguts al meu lloc web&lt;/h1&gt;
+              &lt;p&gt;Aquest paràgraf tindrà text verd i mida 16 píxels.&lt;/p&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+
+          </pre>
+
+          <p>El Archivo CSS:</p>
+          <pre>
+            p {
+              color: green;
+              font-size: 16px;
+              }
+            h1 {
+              text-align: center;
+              color: darkblue;
+              }
+          </pre>
+          
+        </section>
+    
+    
+      </main>
+    </div>
+  </body>
+</html>
