@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Avanzados</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/templateStyle.css">
+</head>
+<body>
+
+    <div class="container">
+      
+      <aside class="sidebar">
+        <h2>Unidad 4</h2>
+        <ul>
+          <li><a href="./CSSAvanzado.html">Introducción Avanzado</a></li>
+          <li><a href="./SelectoresAvanzado.html">Selectores Avanzados</a></li>
+          <li><a href="./AvanzadoFuente.html">Propiedades Avanzadas Fuentes</a></li>
+          <li><a href="./LayoutsFlexGrid.html">Layout Grid y Flexbox</a></li>
+          <li><a href="./PopoverAPI.html">Popover API</a></li>
+          <li><a href="./VariablesCSS.html">Variables en CSS</a></li>
+          <li><a href="./AnimacionesCSS.html">Animaciones en CSS</a></li>
+        </ul>
+      </aside>
+  
+      
+      <main class="content">
+        <section>
+          <h2>Introducción</h2>
+          <p>             
+            Los selectores avanzados en CSS permiten aplicar estilos con mucha más precisión y flexibilidad, permitiendo seleccionar
+            elementos específicos en función de su posición, relación con otros elementos o atributos.
+          </p>
+
+          
+        </section>
+
+        <section>
+            <h2>Selector Avanzados</h2>
+
+            <ol>
+                <li>
+                    Selectores de atributo 
+                    <p>                  
+                        Los selectores de atributo permiten aplicar estilos a los elementos HTML que contienen un determinado atributo o valor de atributo. Son especialmente útiles para estilizar
+                        elementos de formularios o en casos en que utilices atributos personalizados.
+                    </p>
+                    <pre>
+                        input[type="text"] {
+                            border: 1px
+                        }
+
+                        a[href*="example"] {
+                            color: green;
+                        }
+                    </pre>
+                </li>
+
+                <li>
+                    Selectores Combinados
+                    <p>
+                        Los selectores combinados permiten seleccionar elementos que tienen una relación específica con otros elementos dentro del documento. Los combinadors más
+                        comunes son:
+                    </p>
+                    <pre>
+                        div p {
+                            color: red;
+                        }
+
+                        div > p {
+                            color: blue;
+                        }
+
+                        h1 + p {
+                            font-weight:
+                        }
+
+                        h2 ~ p {
+                            color: gray;
+                        }
+                    </pre>
+                </li>
+
+                <li>
+                    Selectores pseudo-classe
+                    <p>                 
+                        Las pseudo-clases son selectores que se utilicen para aplicar estilos a un elemento en un estado o condición particular. Esto permite cambiar el estilo de un elemento
+                        cuando el usuario interactúa o cuando el elemento cumple ciertos criterios.
+                    </p>
+
+                    <ol>
+                        <li>
+                            :hover - Aplica estilos cuando el usuario pasa el ratón por encima del elemento.
+                        </li>
+                        <li>
+                            :nth-child() - Selecciona elementos en función de su posición entre sus hermanos.
+                        </li>
+                        <li>
+                            :first-of-type: Selecciona el primer elemento de su tipo dentro de su padre.
+                        </li>
+                        <li>        
+                            :not(): Selecciona todos los elementos excepto aquellos que coincidan con el selector especificado.
+                        </li>
+                    </ol>
+                    <pre>
+                        a:hover {
+                            color: red;
+                        }
+
+                        tr:nth-child(odd) {
+                            background-color: #f0f0f0;
+                        }
+                        
+                        p:first-of-type {
+                            font-weight: bold;
+                        }
+
+                        div:not(.important) {
+                            background-color: yellow;
+                        }
+                    </pre>
+                </li>
+
+                <li>
+                    Selectores pseudo-elemento 
+                    <p>                
+                        Los pseudo-elementos permiten aplicar estilos a una parte específica de un elemento, como su contenido antes o después, o una línea de texto. Los pseudo-
+                        elementos más comunes son ::before y ::after.
+                    </p>
+
+                    <pre>
+                        h1::before {
+                            content: "★ ";
+                            color: gold;
+                        }
+
+                        p::after {
+                            content: " (Final)";
+                            color: gray;
+                        }
+                    </pre>
+                </li>
+            </ol>
+        </section>
+        
+      </main>
+    </div>
+  </body>
+</html>
