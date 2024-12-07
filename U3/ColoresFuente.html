@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores y fondo en CSS</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/templateStyle.css">
+</head>
+<body>
+
+    <div class="container">
+      
+      <aside class="sidebar">
+        <h2>Unidad 3</h2>
+        <ul>
+          <li><a href="./IntroduccionCSS.html">Introducción</a></li>
+          <li><a href="./AplicacionEstilosCSS.html">Aplicacion Estilos</a></li>
+          <li><a href="./SintaxisBasicaCSS.html">Sintaxis Basica</a></li>
+          <li><a href="./PropiedadesTextoFuente.html">Propiedades Texto y Fuente</a></li>
+          <li><a href="./MargenesBordes.html">Margenes y Bordes</a></li>
+          <li><a href="./ColoresFuente.html">Color y fuentes</a></li>
+          <li><a href="./DimensionesCajas.html">Dimensiones y cajas</a></li>
+          <li><a href="./PosicionamientoBasico.html">Posicionamiento Basico</a></li>
+          <li><a href="./DisenoFlexbox.html">Diseño Basico Flexbox</a></li>
+          <li><a href="./MediaQueriesIntro.html">Media Queries Intro</a></li>
+        </ul>
+      </aside>
+  
+      
+      <main class="content">
+        <section>
+          <h2>Introducción</h2>
+          <p>
+            El CSS proporciona varias propiedades para aplicar colores y fondos a los elementos HTML. Estas propiedades son esenciales
+            para mejorar el aspecto visual y la legibilidad de la página web.
+          </p>
+        </section>
+
+        <section>
+            <h2>Colores y Fondos</h2>
+
+            <ol>
+              <li>
+                Propiedad color
+                <p>              
+                    La propiedad color se utiliza para cambiar el color del texto dentro de un
+                    elemento. Puedes definir los colores de varias maneras:
+                </p>
+                <ol>
+                    <li>                     
+                        Nombres de colores: utilizar nombres predefinidos cómo red, blue,
+                        green, etc.
+                    </li>
+                    <li>
+                        Colors hexadecimals: utilitzar un codi hexadecimal que
+                        comença amb # seguit de sis caràcters (exemple: #FF0000
+                        per a vermell).
+                    </li>
+                    <li>
+                        Colores hexadecimales: utilizar un código hexadecimal que
+                        empieza con # seguido de seis caracteres (ejemplo: #FF0000
+                        para rojo).
+                    </li>
+                    <li>
+                        RGB: utilizar valores de rgb() donde cada componente (rojo,
+                        verde, azul) se especifica entre 0 y 255.
+                    </li>
+                    <li>
+                        RGBA: igual que rgb(), pero con un cuarto valor para la opacidad
+                        (valores entre 0.0 y 1.0).
+                    </li>
+                </ol>
+                <pre>
+                    p {
+                        color: blue; 
+                    }
+                    h1 {
+                        color: #FF5733; 
+                    }
+                    span {
+                        color: rgb(0, 255, 0); 
+                    }
+                    div {
+                        color: rgba(0, 0, 255, 0.5); 
+                        
+                    }
+                </pre>
+              </li>
+
+              <li>
+                Propiedad de Background color
+                <p>
+                    La propiedad background-color se utiliza para establecer el color de fondo
+                    de un elemento. Igual que la propiedad color, puedes definir colores
+                    utilizando nombres, valores hexadecimales, RGB o RGBA.
+                </p>
+                <pre>
+                    body {
+                        background-color: lightgray; /* Color de fons gris clar */
+                    }
+                    div {
+                        background-color: #00FF00; /* Color de fons verd */
+                    }
+                </pre>
+              </li>
+
+              <li>
+                Propiedad Background
+                <p>        
+                    La propiedad background es una manera abreviada de especificar
+                    varias propiedades de fondos a la vez, como el color, la imagen de
+                    fondo, la repetición, la posición, etc.
+                </p>
+            
+                <pre>
+                    div {
+                        background: lightblue url("fons.jpg") no-repeat center cover;
+                    }
+                </pre>
+              </li>
+              <li>
+                Propiedad background-image 
+                <p>
+                    Esta propiedad permite añadir una imagen como fondo de un
+                    elemento. Puedes especificar la ubicación de la imagen con una URL.
+                </p>
+                <pre>
+                    div {
+                        background-image: url("imatge-de-fons.jpg");
+                    }
+                </pre>
+
+                <p>
+                    Si quieres que la imagen se repita o se muestre de otro modo,
+                    puedes utilizar otras propiedades complementarias:
+                </p>
+                <ol>
+                    <li>
+                        background-repeat:  Controla si la imagen de fondo se repite.
+                        Los valores pueden ser repeat, no-repeat, repeat-x
+                        (horizontalmente) o repeat-*y (verticalmente).
+                    </li>
+                    <li>
+                        background-position: Define la posición de la imagen de fondo
+                        (por ejemplo, center, top, left).
+                    </li>
+                    <li>
+                        background-size: Permite ajustar la medida de la imagen (por ejemplo
+                        , cover o contain para adaptarse a la medida del
+                        elemento).
+                    </li>
+                </ol>
+                <pre>
+                    div {
+                        background-image: url("fons.jpg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                </pre>
+              </li>
+            </ol>
+        </section>
+        
+        <section>
+          <h2>Unidades Comunes</h2>
+          <ol>
+            <li>
+              Píxeles (px):
+              Unidad fija, representa un punto a la pantalla.
+              Ejemplo: margin: 20px;
+            </li>
+            <li>
+              Ems (me):
+              Unidad relativa a la medida de la fuente del elemento pare. Ejemplo: padding: 2em; (2 veces la medida de la fuente).
+            </li>
+            <li>
+              Remos (remo):
+              Unidad relativa a la medida de la fuente del elemento raíz (HTML).
+              Ejemplo: margin: 1.5rem; (1.5 veces la medida de la fuente raíz).
+            </li>
+            <li>
+              Porcentaje (%):
+              Relativa a la anchura o altura del contenedor pare.
+              Ejemplo: padding: 5%; (5% de la anchura del contenedor).
+            </li>
+            <li>
+              Viewports (vw, vh):
+              Relativa a la medida de la ventana visible.
+              Ejemplo: margin: 5vw; (5% de la anchura del viewport).
+            </li>
+            <li>
+              Bordes (border-*width):
+              Grosores predeterminados: thin, medium, thick
+            </li>
+          </ol>
+        </section>
+    
+      </main>
+    </div>
+  </body>
+</html>
