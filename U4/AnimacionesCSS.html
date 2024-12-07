@@ -21,13 +21,14 @@
           <li><a href="./PopoverAPI.html">Popover API</a></li>
           <li><a href="./VariablesCSS.html">Variables en CSS</a></li>
           <li><a href="./AnimacionesCSS.html">Animaciones en CSS</a></li>
+          <li><a href="../index.html">Volver a Index</a></li>
         </ul>
       </aside>
   
       
       <main class="content">
         <section>
-          <h2>Animacines CSS</h2>
+          <h2>Animaciones CSS</h2>
           <p>             
            
                 Las animaciones y transiciones en CSS son herramientas potentes que permiten añadir movimiento e interacción visual en
@@ -39,23 +40,77 @@
             <li>
                 Uso de transiciones:
                 <p>
-                    
                     Las transiciones CSS permiten que los cambios en las propiedades de un elemento, como el color, la opacidad, la medida o la posición, sean suaves en lugar de
                     bruscos. Cuando una propiedad cambia, puedes definir la velocidad del cambio utilizando transition.
                 </p>
+                <pre>
+                    element {
+                        transition: propietat durada funció-temporització retard;
+                    }
+                </pre>
+            </li>
+
+            <li>
+                Propiedades de transiciones
+                <p>
+                    Si quieres animar varias propiedades simultáneamente, puedes especificarlas individualmente con transition-property o
+                    utilizar ajo para aplicar la transición a todas las propiedades que cambien.
+                </p>
+                <pre>
+                    div {
+                        width: 100px;
+                        height: 100px;
+                        background-color: lightgreen;
+                        transition: width 1s ease, background-color 0.5s ease-in-out;
+                    }
+                    div:hover {
+                        width: 200px;
+                        background-color: darkgreen;
+                    }
+                </pre>
+            </li>
+
+            <li>
+                Animaciones calve con keyframes
+                <p>        
+                    Las animaciones en CSS permiten crear movimientos más complejos que las transiciones. Utilizan la regla @keyframes
+                    para definir puntos intermedios del movimiento o cambio de propiedad, y se aplican a través de la propiedad animation.
+                </p>
+                Sintaxis de keyframes
+                <pre>
+                    @keyframes nom-animacio {
+                        0% { propietat: valor-inicial; }
+                        100% { propietat: valor-final; }
+                    }
+                </pre>
+                <ol>
+                    <li><strong>Nombre de la animación:</strong> El nombre de la animación definida con @keyframes.</li>
+                    <li><strong>Duración:</strong> El tiempo que durará la animación.</li>
+                    <li><strong>Función de temporización:</strong> Controla la velocidad de la animación (linear, ease, etc.).</li>
+                    <li><strong>Retraso:</strong> Opcional, cuánto tiempo tardará en comenzar la animación.</li>
+                    <li><strong>Ciclos:</strong> Cuántas veces se repetirá la animación (infinite para repetirla indefinidamente).</li>
+                    <li><strong>Dirección:</strong> Opcional, si la animación se reproduce de manera normal o inversa (normal, reverse, alternate).</li>
+                </ol>
+
+                <pre>
+                    @keyframes girar {
+                        from {
+                            transform: rotate(0deg);
+                        }
+                        to {
+                            transform: rotate(360deg);
+                        }
+                        }
+                    div {
+                        width: 100px;
+                        height: 100px;
+                        background-color: coral;
+                        animation: girar 2s linear infinite;
+                    }
+                </pre>
+                  
             </li>
           </ol>
-
-          <pre>
-            :root {
-                --color-primari: #3498db;
-                --marge-petit: 10px;
-            }
-            body {
-                background-color: var(--color-primari);
-                margin: var(--marge-petit);
-            }
-          </pre>
           
 
           
