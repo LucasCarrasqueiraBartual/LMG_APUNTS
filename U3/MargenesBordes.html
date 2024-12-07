@@ -37,8 +37,119 @@
             así como definir los límites visuales con un borde.
           </p>
         </section>
+
+        <section>
+            <h2>Margenes, rellenos y los bordes</h2>
+
+            <ol>
+              <li>
+                Margenes (margin)
+                <p>
+                  La propiedad margin controla el espacio exterior de un elemento, es decir
+                  , el espacio que hay entre un elemento y los otros elementos
+                  que lo rodean. Los márgenes se pueden definir de manera
+                  individual para cada uno de los cuatro lados del elemento
+                  (superior, derecho, inferior, izquierdo) o de manera global para
+                  todos los lados a la vez.
+                </p>
+                <pre>
+                  p {
+                    margin: 10px; 
+                  }
+                  h1 {
+                    margin-top: 20px; 
+                    margin-bottom: 10px; 
+                    margin-left: 10px; 
+                    margin-right: 10px; 
+                  }
+                </pre>
+              </li>
+
+              <li>
+                Rellenos (padding)
+                <p>
+                  La propiedad padding controla el espacio interior de un elemento, es decir
+                  , el espacio entre el contenido de un elemento (como texto o
+                  imágenes) y sus bordes. Igual que con los márgenes, los rellenos
+                  se pueden definir para todos los lados o para cada uno
+                  individualmente.
+                </p>
+                <pre>
+                  div {
+                    padding: 20px; 
+                  }
+                  h2 {
+                    padding-left:
+                  }
+                </pre>
+              </li>
+
+              <li>
+                Bordes (border)
+                <p>
+                  La propiedad border se utiliza para añadir un borde alrededor de
+                  un elemento. Esta propiedad tiene diversos subatributos:
+                </p>
+                <ul>
+                  <li>
+                    <b>Anchura del borde</b> (border-*width): define el grosor del
+                    borde.
+                  </li>
+                  <li>
+                    <b>Estilo del borde</b> (border-*style): puede ser solid (sólido), dashed (rayado), dotted (puntitos), etc.
+                  </li>
+                  <li>
+                    <b>Color del borde</b> (border-color): especifica el color del
+                    borde.
+                  </li>
+                </ul>
+
+
+                <pre>
+                  div {
+                    border: 2px solid black; 
+                  }
+                  p {
+                    border: 1px dashed blue; 
+                  }
+                </pre>
+              </li>
+            </ol>
+        </section>
         
-    
+        <section>
+          <h2>Unidades Comunes</h2>
+          <ol>
+            <li>
+              Píxeles (px):
+              Unidad fija, representa un punto a la pantalla.
+              Ejemplo: margin: 20px;
+            </li>
+            <li>
+              Ems (me):
+              Unidad relativa a la medida de la fuente del elemento pare. Ejemplo: padding: 2em; (2 veces la medida de la fuente).
+            </li>
+            <li>
+              Remos (remo):
+              Unidad relativa a la medida de la fuente del elemento raíz (HTML).
+              Ejemplo: margin: 1.5rem; (1.5 veces la medida de la fuente raíz).
+            </li>
+            <li>
+              Porcentaje (%):
+              Relativa a la anchura o altura del contenedor pare.
+              Ejemplo: padding: 5%; (5% de la anchura del contenedor).
+            </li>
+            <li>
+              Viewports (vw, vh):
+              Relativa a la medida de la ventana visible.
+              Ejemplo: margin: 5vw; (5% de la anchura del viewport).
+            </li>
+            <li>
+              Bordes (border-*width):
+              Grosores predeterminados: thin, medium, thick
+            </li>
+          </ol>
+        </section>
     
       </main>
     </div>
