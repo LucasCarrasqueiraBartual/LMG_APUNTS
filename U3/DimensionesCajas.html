@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensiones y Cajas</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/templateStyle.css">
+</head>
+<body>
+
+    <div class="container">
+      
+      <aside class="sidebar">
+        <h2>Unidad 3</h2>
+        <ul>
+          <li><a href="./IntroduccionCSS.html">Introducción</a></li>
+          <li><a href="./AplicacionEstilosCSS.html">Aplicacion Estilos</a></li>
+          <li><a href="./SintaxisBasicaCSS.html">Sintaxis Basica</a></li>
+          <li><a href="./PropiedadesTextoFuente.html">Propiedades Texto y Fuente</a></li>
+          <li><a href="./MargenesBordes.html">Margenes y Bordes</a></li>
+          <li><a href="./ColoresFuente.html">Color y fuentes</a></li>
+          <li><a href="./DimensionesCajas.html">Dimensiones y cajas</a></li>
+          <li><a href="./PosicionamientoBasico.html">Posicionamiento Basico</a></li>
+          <li><a href="./DisenoFlexbox.html">Diseño Basico Flexbox</a></li>
+          <li><a href="./MediaQueriesIntro.html">Media Queries Intro</a></li>
+        </ul>
+      </aside>
+  
+      
+      <main class="content">
+        <section>
+          <h2>Introducción</h2>
+          <p>
+            El CSS utiliza el modelo de caja para representar los elementos de una página web. Cada elemento se considera como una
+            caja rectangular que contiene el contenido, rellenados, márgenes y bordes. Es importante entender este modelo porque
+            controla como se distribuyen y se ajustan los elementos dentro de la página.<br><br>
+            El modelo de caja se compone de cuatro partes principales:
+          </p>
+          <ol>
+            <li><b>Contenido:</b> El contenido real del elemento, como texto, imágenes u otros elementos.</li>
+            <li><b>Relleno (padding):</b> El espacio entre el contenido y el borde.</li>
+            <li><b>Borde (border):</b> El límite alrededor del relleno.</li>
+            <li><b>Margen (margin):</b> El espacio externo entre el borde y otros elementos.</li>
+          </ol>
+          
+        </section>
+
+        <section>
+            <h2>Dimensiones y Cajas</h2>
+
+            <ol>
+              <li>
+                Propiedad de dimensiones (width y height)
+                <p>
+                    Las propiedades width (anchura) y height (altura) se utilizan para definir la medida de un elemento. Estos valores se
+                    pueden definir en unidades fijas como píxeles (px) o unidades relativas como porcentajes (%), que dependen de la medida de su
+                    elemento contenedor.
+                </p>
+                <pre>
+                    div {
+                        width: 300px;
+                        height: 150px; 
+                    }
+                    .container {
+                        width: 50%;
+                        height: auto; 
+                    }
+                </pre>
+              </li>
+
+              <li>
+                El modelo de caja en CSS
+                <p> 
+                El modelo de caja establece como se calculan las dimensiones de un elemento teniendo en cuenta las propiedades de márgenes, rellenados, y bordes. Por
+                defecto, la medida de width y height solo afecta el contenido. Para incluir el relleno y el borde dentro de las dimensiones del elemento, se puede utilizar
+                la propiedad box-sizing.
+                </p>
+                <pre>
+                    div {
+                        width: 200px;
+                        padding: 20px;
+                        border: 5px solid black;
+                        box-sizing:
+                    }
+                </pre>
+              </li>
+
+              <li>
+                Control del desbordamiento (Overflow)
+                <p>
+                    Cuando el contenido de un elemento es más grande que las dimensiones especificadas, lo CSS ofrece la propiedad overflow para controlar como se
+                    muestra el contenido que desborda<br>
+                    Los valores mas comunes son:
+                </p>
+                <ul>
+                  <li>
+                    <b>visible</b> El contenido que desborda se muestra fuera del elemento (valor por defecto).
+                  </li>
+                  <li>
+                    <b>hidden</b> El contenido que desborda se recorta y no se muestra.
+                  </li>
+                  <li>
+                    <b>scroll</b> Muestra barras de desplazamiento, aunque el contenido no desborde.
+                  </li>
+                  <li>
+                    <b>auto</b> Muestra barras de desplazamiento solo si el contenido desborda.
+                  </li>
+                </ul>
+
+
+                <pre>
+                    div {
+                        width: 150px;
+                        height: 100px;
+                        overflow: scroll;
+                    }
+                </pre>
+              </li>
+            </ol>
+        </section>
+        
+      </main>
+    </div>
+  </body>
+</html>
