@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables CSS</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/templateStyle.css">
+</head>
+<body>
+
+    <div class="container">
+      
+      <aside class="sidebar">
+        <h2>Unidad 4</h2>
+        <ul>
+          <li><a href="./CSSAvanzado.html">Introducción Avanzado</a></li>
+          <li><a href="./SelectoresAvanzado.html">Selectores Avanzados</a></li>
+          <li><a href="./AvanzadoFuente.html">Propiedades Avanzadas Fuentes</a></li>
+          <li><a href="./LayoutsFlexGrid.html">Layout Grid y Flexbox</a></li>
+          <li><a href="./PopoverAPI.html">Popover API</a></li>
+          <li><a href="./VariablesCSS.html">Variables en CSS</a></li>
+          <li><a href="./AnimacionesCSS.html">Animaciones en CSS</a></li>
+        </ul>
+      </aside>
+  
+      
+      <main class="content">
+        <section>
+          <h2>Variables CSS</h2>
+          <p>             
+            
+            Las variables CSS, también conocidas cómo Custom Properties, permiten definir valores reutilizables dentro de un
+            documento CSS. Esta característica facilita mucho la gestión y mantenimiento de grandes hojas de estilo, puesto que puedes
+            centralizar valores como colores, medidas y espaciados, y reutilizarlos en varias reglas CSS. Si necesitas hacer un cambio en
+            alguno de estos valores, solo tendrás que modificar la variable en un lugar, y el cambio se propagará a todas las partes del
+            documento donde se utiliza.
+          </p>
+
+          <pre>
+            :root {
+                --color-primari: #3498db;
+                --marge-petit: 10px;
+            }
+            body {
+                background-color: var(--color-primari);
+                margin: var(--marge-petit);
+            }
+          </pre>
+          
+
+          
+
+          
+        </section>
+        
+      </main>
+    </div>
+  </body>
+</html>
