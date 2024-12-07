@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avanzado Fuente</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/templateStyle.css">
+</head>
+<body>
+
+    <div class="container">
+      
+      <aside class="sidebar">
+        <h2>Unidad 4</h2>
+        <ul>
+          <li><a href="./CSSAvanzado.html">Introducción Avanzado</a></li>
+          <li><a href="./SelectoresAvanzado.html">Selectores Avanzados</a></li>
+          <li><a href="./AvanzadoFuente.html">Propiedades Avanzadas Fuentes</a></li>
+          <li><a href="./LayoutsFlexGrid.html">Layout Grid y Flexbox</a></li>
+          <li><a href="./PopoverAPI.html">Popover API</a></li>
+          <li><a href="./VariablesCSS.html">Variables en CSS</a></li>
+          <li><a href="./AnimacionesCSS.html">Animaciones en CSS</a></li>
+        </ul>
+      </aside>
+  
+      
+      <main class="content">
+        <section>
+          <h2>Introducción</h2>
+          <p>               
+            El control de la tipografía en una página web es crucial para garantizar una buena legibilidad y una estética consistente. En
+            CSS avanzado, tienes acceso a un conjunto de propiedades que te permiten controlar varios aspectos de las fuentes, como su
+            carga dinámica, espaciado, peso, y líneas de texto. También exploraremos como utilizar fuentes personalizadas con la regla
+            @font-face.
+          </p>
+
+          
+        </section>
+
+        <section>
+            <h2>Fuente y tipografai avanzado</h2>
+
+            <ol>
+                <li><strong>Tipografías web con @font-face:</strong> 
+                    <p>La regla @font-face permite utilizar fuentes personalizadas que no están disponibles en el sistema del usuario. Esto significa que puedes cargar fuentes específicas desde tu servidor o desde una fuente externa como Google Fonts, garantizando una coherencia tipográfica entre todos los usuarios, independientemente del dispositivo o navegador que utilicen.</p>
+                </li>
+                <li><strong>Control avanzado de tipografía:</strong> 
+                    <p>
+                    Además de definir fuentes personalizadas, CSS ofrece propiedades avanzadas para controlar otros aspectos tipográficos, como el espacio entre letras, el grosor de la fuente o la altura de las líneas.
+                    </p>
+                
+                </li>
+                <li><strong>Uso del Web Open Font Format (WOFF):</strong> 
+                    <p>
+                        WOFF y WOFF2 son formatos de fuente comprimidos diseñados específicamente para uso web. Estos formatos proporcionan una compresión más eficiente que los formatos tradicionales, mejorando el tiempo de carga de las páginas sin perder calidad tipográfica. Es recomendable utilizar WOFF2 cuando sea posible, ya que es el formato más moderno y optimizado.
+                
+                    </p>
+                </li>
+              </ol>
+
+            <pre>
+                @font-face {
+                    font-family: "Open Sans";
+                    src: url("fonts/OpenSans-Regular.woff2") format("woff2"),
+                    url("fonts/OpenSans-Regular.woff") format("woff");
+                    }
+                    body {
+                    font-family:
+                }
+
+                @font-face {
+                    font-family: "Roboto";
+                    src: url("fonts/Roboto-Regular.woff2") format("woff2"),
+                    url("fonts/Roboto-Regular.woff") format("woff");
+                }
+    
+            </pre>
+              
+        </section>
+        
+      </main>
+    </div>
+  </body>
+</html>
