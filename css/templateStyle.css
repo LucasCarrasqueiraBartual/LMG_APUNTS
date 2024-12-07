@@ -3,12 +3,12 @@
 @font-face {
     font-family: 'Sora-Medium';
     color: whitesmoke;
-    src: url("/fonts/Sora-Medium.ttf");
+    src: url("./fonts/Sora-Medium.ttf");
 }
 
 @font-face {
     font-family: 'LemonMilk';
-    src: url("/fonts/LEMONMILK-Bold.otf");
+    src: url("./fonts/LEMONMILK-Bold.otf");
 }
 
 body {
